@@ -8,13 +8,6 @@
 
 import UIKit
 
-protocol VideoCellDelegate {
-    
-    func didTapWatchLater(title: String)
-    func didTapWatchNow(url: String)
-}
-
-
 class VideoCell: UITableViewCell {
 
     @IBOutlet weak var videoImageView: UIImageView!
@@ -27,6 +20,12 @@ class VideoCell: UITableViewCell {
         videoItem = video
         videoImageView.image = video.image
         videoTitle.text = video.title
+    }
+    
+    @IBAction func watchLaterTapped(_ sender: Any) {
+    }
+    
+    @IBAction func watchNowTapped(_ sender: Any) {
     }
     
 }

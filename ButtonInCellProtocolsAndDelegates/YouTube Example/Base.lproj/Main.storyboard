@@ -47,6 +47,9 @@
                                                     <state key="normal" title="Watch Later">
                                                         <color key="titleColor" red="0.90588235294117647" green="0.23529411764705882" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="watchLaterTapped:" destination="fdU-B8-HH4" eventType="touchUpInside" id="h00-GR-a5w"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Osh-ii-XPW" customClass="YTRoundedButton" customModule="YouTube_Example" customModuleProvider="target">
                                                     <rect key="frame" x="247" y="56" width="90" height="35"/>
@@ -59,6 +62,9 @@
                                                     <state key="normal" title="Watch Now">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="watchNowTapped:" destination="fdU-B8-HH4" eventType="touchUpInside" id="Pym-Vk-TKq"/>
+                                                    </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fIs-7f-7bb">
                                                     <rect key="frame" x="142" y="29" width="213" height="20"/>
