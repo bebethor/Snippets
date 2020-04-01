@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="eP3-IM-meL">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="eP3-IM-meL">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -34,14 +31,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="e5A-Qb-o7x">
-                                                    <rect key="frame" x="12" y="28" width="110" height="62"/>
+                                                    <rect key="frame" x="12" y="29" width="110" height="62"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="e5A-Qb-o7x" secondAttribute="height" multiplier="16:9" id="Dvc-OB-12i"/>
                                                         <constraint firstAttribute="width" constant="110" id="Y26-xl-2TH"/>
                                                     </constraints>
                                                 </imageView>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cwg-aS-bBQ" customClass="YTGhostButton" customModule="YouTube_Example" customModuleProvider="target">
-                                                    <rect key="frame" x="142" y="55" width="90" height="35"/>
+                                                    <rect key="frame" x="142" y="56" width="90" height="35"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="90" id="HnK-RF-jpA"/>
                                                         <constraint firstAttribute="height" constant="35" id="mMr-HY-7xT"/>
@@ -50,12 +47,9 @@
                                                     <state key="normal" title="Watch Later">
                                                         <color key="titleColor" red="0.90588235294117647" green="0.23529411764705882" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
-                                                    <connections>
-                                                        <action selector="watchLaterTapped:" destination="fdU-B8-HH4" eventType="touchUpInside" id="g8l-o4-OXZ"/>
-                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Osh-ii-XPW" customClass="YTRoundedButton" customModule="YouTube_Example" customModuleProvider="target">
-                                                    <rect key="frame" x="247" y="55" width="90" height="35"/>
+                                                    <rect key="frame" x="247" y="56" width="90" height="35"/>
                                                     <color key="backgroundColor" red="0.90588235289999997" green="0.23529411759999999" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="35" id="T3b-Kf-eDV"/>
@@ -65,12 +59,9 @@
                                                     <state key="normal" title="Watch Now">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
-                                                    <connections>
-                                                        <action selector="watchNowTapped:" destination="fdU-B8-HH4" eventType="touchUpInside" id="7vn-TW-MvK"/>
-                                                    </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fIs-7f-7bb">
-                                                    <rect key="frame" x="142" y="28" width="213" height="20"/>
+                                                    <rect key="frame" x="142" y="29" width="213" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="20" id="A4O-eY-hDa"/>
                                                     </constraints>

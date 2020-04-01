@@ -29,13 +29,4 @@ class VideoCell: UITableViewCell {
         videoTitle.text = video.title
     }
     
-    @IBAction func watchLaterTapped(_ sender: YTGhostButton) {
-        delegate?.didTapWatchLater(title: videoItem.title)
-    }
-    
-    
-    @IBAction func watchNowTapped(_ sender: YTRoundedButton) {
-        delegate?.didTapWatchNow(url: videoItem.url)
-    }
-    
 }
