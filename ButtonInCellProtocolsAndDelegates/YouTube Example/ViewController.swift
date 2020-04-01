@@ -9,6 +9,7 @@
 import UIKit
 import SafariServices
 
+// Delegate
 class ViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
@@ -64,26 +65,24 @@ class ViewController: UIViewController {
 
 
 extension ViewController: VideoCellDelegate {
-
     func didTapWatchLater(title: String) {
-        
         let alertTitle = "Watch Later"
-        let message = "\(title) added to Watch Later List"
+        let message    = "\(title) added to watch list"
         
         let alert = UIAlertController(title: alertTitle, message: message, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         present(alert, animated: true, completion: nil)
     }
     
-    
     func didTapWatchNow(url: String) {
-        
         let videoURL = URL(string: url)!
         let safariVC = SFSafariViewController(url: videoURL)
-        present(safariVC, animated: true, completion: nil)
+        present(safariVC, animated: true) {
+            print("Llamando al completion")
+        }
     }
+    
 }
-
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
     

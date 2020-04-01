@@ -8,6 +8,12 @@
 
 import UIKit
 
+// The BOSS
+protocol VideoCellDelegate {
+    func didTapWatchLater(title: String)
+    func didTapWatchNow(url: String)
+}
+
 class VideoCell: UITableViewCell {
 
     @IBOutlet weak var videoImageView: UIImageView!
@@ -22,10 +28,12 @@ class VideoCell: UITableViewCell {
         videoTitle.text = video.title
     }
     
-    @IBAction func watchLaterTapped(_ sender: Any) {
+    @IBAction func watchLaterTapped(_ sender: YTGhostButton) {
+        delegate?.didTapWatchLater(title: videoItem.title)
     }
     
-    @IBAction func watchNowTapped(_ sender: Any) {
+    @IBAction func watchNowTapped(_ sender: YTRoundedButton) {
+        delegate?.didTapWatchNow(url: videoItem.url)
     }
     
 }
